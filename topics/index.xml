@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on Muggle</title>
-    <link>https://www.example.com/topics/</link>
+    <link>https://muggle110.github.io/topics/</link>
     <description>Recent content in Topics on Muggle</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.example.com/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://muggle110.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>踩坑记录</title>
-      <link>https://www.example.com/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <link>https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.example.com/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
       <description></description>
     </item>
     

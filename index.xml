@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Muggle</title>
-    <link>https://www.example.com/</link>
+    <link>https://muggle110.github.io/</link>
     <description>Recent content on Muggle</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
     <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://muggle110.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hugo new post/x x x.md 无法正确生成.md文件</title>
-      <link>https://www.example.com/post/my_post_05_30_2020_b/</link>
+      <link>https://muggle110.github.io/post/my_post_05_30_2020_b/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.example.com/post/my_post_05_30_2020_b/</guid>
+      <guid>https://muggle110.github.io/post/my_post_05_30_2020_b/</guid>
       <description>问题描述：
 使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &amp;ldquo;new&amp;rdquo; 的 非.md 的空白文件；
 解决方法：
@@ -26,10 +26,10 @@ hugo new post/my_post_05_30_2020.md </description>
     
     <item>
       <title>用 Hugo 搭建自己的 blog —— My first post</title>
-      <link>https://www.example.com/post/my_first_post/</link>
+      <link>https://muggle110.github.io/post/my_first_post/</link>
       <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.example.com/post/my_first_post/</guid>
+      <guid>https://muggle110.github.io/post/my_first_post/</guid>
       <description>这是第一篇文章。算是记录一下自己用hugo搭建博客所遇到的问题吧，我是根据🐑哥的教程来搭建的。 https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;amp;seid=3132796518941291439
 我搭建博客所使用的环境是 macOS（ Catalina 10.15.4 ），并提前安装了 brew工具 和 git ，且配置好了 git 的 username 和 email ；
 首先， 我们来梳理一下用hugo搭建博客的流程：
