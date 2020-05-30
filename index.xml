@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Muggle</title>
+    <link>https://muggle110.github.io/</link>
+    <description>Recent content on Muggle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://muggle110.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My first post</title>
+      <link>https://muggle110.github.io/post/my_first_post/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://muggle110.github.io/post/my_first_post/</guid>
+      <description>这是第一篇文章。算是记录一下自己用hugo搭建博客所遇到的问题吧，我是根据🐑哥的教程来搭建的。 https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;amp;seid=3132796518941291439
+我搭建博客所使用的环境是 macOS（ Catalina 10.15.4 ），并提前安装了 brew工具 和 git ，且配置好了 git 的 username 和 email ；
+首先， 我们来梳理一下用hugo搭建博客的流程：
+1.安装 Hugo（我使用的是brew工具进行的安装）；
+brew install hugo 2.用 Hugo 创建新的（博客）站点页面；
+hugo new site myblog //my blog 为自定义名称 3.下载并设置主题；
+进入myblog根目录下，输入
+git clone https://github.com/yoshiharuyamashita/blackburn themes/blackburn // 此处的themes/blackburn的功能是建立文件夹 4.在本地启动服务器测试博客的效果；
+hugo server -t blackburn --buildDrafts // -t 代表指定主题 blackburn是我下的主题的名字，可替换成你下载的主题名称 5.创建一篇新的文章，并使用 Visual Studio Code进行编辑；
+hugo new post/my first post.md // post/my first post.md 为自定义的新文件夹与其根目录下的文件；另，我本想用&amp;quot;posts&amp;quot;而非&amp;quot;post&amp;quot;，但该主题似乎制定路径为&amp;quot;content/post&amp;quot;。顺带一提，创建的文件都可以去finder中确认； 6.在github 创建一个新的 repository,并将本地博客部署到 github 的 repository 里;</description>
+    </item>
+    
+  </channel>
+</rss>
