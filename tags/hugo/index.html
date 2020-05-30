@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.71.1" />
 
-  <title>Topics &middot; Muggle</title>
+  <title>hugo &middot; Muggle</title>
 
     
 
@@ -43,7 +43,7 @@
  
   
   <link rel="alternate" type="application/rss+xml" title="Muggle"
-    href='https://www.example.com/topics/index.xml' />
+    href='https://www.example.com/tags/hugo/index.xml' />
   
 
   
@@ -132,7 +132,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href='https://www.example.com/topics/index.xml'><i
+      <a class="pure-menu-link" href='https://www.example.com/tags/hugo/index.xml'><i
           class="fas fa-rss"></i>RSS</a>
     </li>
     
@@ -250,18 +250,126 @@
 
 
 <div class="header">
-  <h1>Topics</h1>
+  <h1>hugo</h1>
 </div>
+
 <div class="content">
-  <ul>
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>120 May 30300, 00:00</time>
+  </div>
+
+  
+
   
   
-    <li>
-      <a href="%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
-      <span>&#40;2&#41;</span>
-    </li>
   
-  </ul>
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://www.example.com/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/hugo">hugo</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  问题描述：
+使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &ldquo;new&rdquo; 的 非.md 的空白文件；
+解决方法：
+新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
+hugo new post/my_post_05_30_2020.md 
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://www.example.com/post/my_first_post/">用 Hugo 搭建自己的 blog —— My first post</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>120 May 30300, 00:00</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://www.example.com/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://www.example.com/tags/hugo">hugo</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  这是第一篇文章。算是记录一下自己用hugo搭建博客所遇到的问题吧，我是根据🐑哥的教程来搭建的。 https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;seid=3132796518941291439
+我搭建博客所使用的环境是 macOS（ Catalina 10.15.4 ），并提前安装了 brew工具 和 git ，且配置好了 git 的 username 和 email ；
+首先， 我们来梳理一下用hugo搭建博客的流程：
+1.安装 Hugo（我使用的是brew工具进行的安装）；
+brew install hugo 2.用 Hugo 创建新的（博客）站点页面；
+hugo new site myblog //my blog 为自定义名称 3.下载并设置主题；
+进入myblog根目录下，输入
+git clone https://github.com/yoshiharuyamashita/blackburn themes/blackburn // 此处的themes/blackburn的功能是建立文件夹 4.在本地启动服务器测试博客的效果；
+hugo server -t blackburn --buildDrafts // -t 代表指定主题 blackburn是我下的主题的名字，可替换成你下载的主题名称 5.创建一篇新的文章，并使用 Visual Studio Code进行编辑；
+hugo new post/my first post.md // post/my first post.md 为自定义的新文件夹与其根目录下的文件；另，我本想用&quot;posts&quot;而非&quot;post&quot;，但该主题似乎制定路径为&quot;content/post&quot;。顺带一提，创建的文件都可以去finder中确认； 6.在github 创建一个新的 repository,并将本地博客部署到 github 的 repository 里;
+  </p>
+
+  
+  <footer>
+    <a href="https://www.example.com/post/my_first_post/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
 </div>
 
 </div>

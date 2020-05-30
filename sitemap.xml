@@ -3,26 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://muggle110.github.io/post/my_first_post/</loc>
+    <loc>https://www.example.com/post/my_post_05_30_2020_b/</loc>
     <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muggle110.github.io/</loc>
+    <loc>https://www.example.com/post/my_first_post/</loc>
     <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muggle110.github.io/post/</loc>
+    <loc>https://www.example.com/tags/hugo/</loc>
     <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muggle110.github.io/tags/</loc>
+    <loc>https://www.example.com/</loc>
+    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muggle110.github.io/topics/</loc>
+    <loc>https://www.example.com/post/</loc>
+    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.example.com/tags/</loc>
+    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.example.com/topics/</loc>
+    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.example.com/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
