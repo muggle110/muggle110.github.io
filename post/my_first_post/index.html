@@ -79,7 +79,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://muggle110.github.io/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://muggle110.github.io/">Muggle</a>
 
 
   <div class="pure-menu">
@@ -251,7 +251,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>120 May 30300, 00:00</time>
+    <time>115 May 30300, 300:21</time>
   </div>
 
   
@@ -306,7 +306,18 @@ git commit -m &quot;my first post&quot;                           // 将添加�
 </code></pre><p>8.将本地的 public 文件夹与 github 的 repository 进行关联，并将本地的.git部署到互联网上；</p>
 <pre><code>git remote add origin https://github.com/muggle110/muggle110.github.io.git           //注意最后有一个 .git
 git push -u origin master                               //当出现 * [new branch]      master -&gt; master ，说明推送成功了；
-</code></pre>
+</code></pre><p>CAUTION   ————   一些踩坑的经验</p>
+<ol>
+<li>
+<p>当使用 hugo server -D  或  hugo server -t blackburn &ndash;buildDrafts 来在本地检查页面时，
+必须得是在 /myblog 的根目录下输入命令，否则会出错；</p>
+</li>
+<li>
+<p>当使用 git add .   或  git add -A  或  git commit -m &ldquo;my first post&rdquo; 来添加至git时，
+必须在 /myblog/public 的根目录下,否则会出错；</p>
+</li>
+</ol>
+
   
   <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
@@ -352,8 +363,14 @@ git push -u origin master                               //当出现 * [new branc
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="https://muggle110.github.io/post/my_post_05_30_2020_b/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -362,13 +379,13 @@ git push -u origin master                               //当出现 * [new branc
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a>
+      <a href="https://muggle110.github.io/post/my_post_05_31_2020_a/">hugo 主题的样式部署到github上无法正常显示</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://muggle110.github.io/post/my_post_05_30_2020_b/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://muggle110.github.io/post/my_post_05_31_2020_a/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

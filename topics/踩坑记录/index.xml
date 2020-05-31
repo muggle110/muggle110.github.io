@@ -6,28 +6,29 @@
     <description>Recent content in 踩坑记录 on Muggle</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 10:26:54 +0800</lastBuildDate>
     
 	<atom:link href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>hugo new post/x x x.md 无法正确生成.md文件</title>
-      <link>https://muggle110.github.io/post/my_post_05_30_2020_b/</link>
-      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      <title>hugo 主题的样式部署到github上无法正常显示</title>
+      <link>https://muggle110.github.io/post/my_post_05_31_2020_a/</link>
+      <pubDate>Sun, 31 May 2020 10:26:54 +0800</pubDate>
       
-      <guid>https://muggle110.github.io/post/my_post_05_30_2020_b/</guid>
+      <guid>https://muggle110.github.io/post/my_post_05_31_2020_a/</guid>
       <description>问题描述：
-使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &amp;ldquo;new&amp;rdquo; 的 非.md 的空白文件；
-解决方法：
-新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
-hugo new post/my_post_05_30_2020.md </description>
+配置好博客的主题后使用 hugo sever -D 检查本地样式显示正常，但一推送到github上就出现了样式不显示的问题; 多半是 config.toml 文件中的 baseUrl 没有配置好；
+解决方案：
+打开 hugo root 下的 /config.toml ，检查 baseUrl是否为
+baseurl = &amp;quot;https://www.example.com/&amp;quot; 如果是&amp;quot;https://www.example.com/&amp;quot;，请将&amp;quot;&amp;ldquo;内的链接地址修改为自己仓库的地址，如:
+baseurl = &amp;quot;https://muggle110.github.io/&amp;quot; </description>
     </item>
     
     <item>
       <title>用 Hugo 搭建自己的 blog —— My first post</title>
       <link>https://muggle110.github.io/post/my_first_post/</link>
-      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 May 2020 23:21:54 +0800</pubDate>
       
       <guid>https://muggle110.github.io/post/my_first_post/</guid>
       <description>这是第一篇文章。算是记录一下自己用hugo搭建博客所遇到的问题吧，我是根据🐑哥的教程来搭建的。 https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;amp;seid=3132796518941291439
@@ -40,6 +41,19 @@ hugo new site myblog //my blog 为自定义名称 3.下载并设置主题；
 git clone https://github.com/yoshiharuyamashita/blackburn themes/blackburn // 此处的themes/blackburn的功能是建立文件夹 4.在本地启动服务器测试博客的效果；
 hugo server -t blackburn --buildDrafts // -t 代表指定主题 blackburn是我下的主题的名字，可替换成你下载的主题名称 5.创建一篇新的文章，并使用 Visual Studio Code进行编辑；
 hugo new post/my first post.md // post/my first post.md 为自定义的新文件夹与其根目录下的文件；另，我本想用&amp;quot;posts&amp;quot;而非&amp;quot;post&amp;quot;，但该主题似乎制定路径为&amp;quot;content/post&amp;quot;。顺带一提，创建的文件都可以去finder中确认； 6.在github 创建一个新的 repository,并将本地博客部署到 github 的 repository 里;</description>
+    </item>
+    
+    <item>
+      <title>hugo new post/x x x.md 无法正确生成.md文件</title>
+      <link>https://muggle110.github.io/post/my_post_05_30_2020_b/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://muggle110.github.io/post/my_post_05_30_2020_b/</guid>
+      <description>问题描述：
+使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &amp;ldquo;new&amp;rdquo; 的 非.md 的空白文件；
+解决方法：
+新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
+hugo new post/my_post_05_30_2020.md </description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.71.1" />
 
-  <title>踩坑记录 &middot; Muggle</title>
+  <title>hugo 主题的样式部署到github上无法正常显示 &middot; Muggle</title>
 
     
 
@@ -41,9 +41,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="Muggle"
-    href='https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/index.xml' />
   
 
   
@@ -130,11 +127,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href='https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/index.xml'><i
-          class="fas fa-rss"></i>RSS</a>
-    </li>
     
 
     
@@ -250,16 +242,12 @@
 
 
 <div class="header">
-  <h1>踩坑记录</h1>
+  <h1>hugo 主题的样式部署到github上无法正常显示</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://muggle110.github.io/post/my_post_05_31_2020_a/">hugo 主题的样式部署到github上无法正常显示</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -294,136 +282,104 @@
 
 </div>
 
-  </header>
+  <p>问题描述：</p>
+<p>配置好博客的主题后使用 hugo sever -D 检查本地样式显示正常，但一推送到github上就出现了样式不显示的问题;
+多半是 config.toml 文件中的 baseUrl 没有配置好；</p>
+<p><img src="https://muggle110.github.io/Users/doric_cao/Downloads/Snipaste_2020-05-31_01-15-50.png" alt="image alt text"></p>
+<p>解决方案：</p>
+<p>打开 hugo root 下的 /config.toml ，检查 baseUrl是否为</p>
+<pre><code>baseurl = &quot;https://www.example.com/&quot;
+</code></pre><p>如果是&quot;https://www.example.com/&quot;，请将&quot;&ldquo;内的链接地址修改为自己仓库的地址，如:</p>
+<pre><code>baseurl = &quot;https://muggle110.github.io/&quot;
+</code></pre>
+  
+  <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
+<ul class="share-buttons">
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmuggle110.github.io%2fpost%2fmy_post_05_31_2020_a%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fmuggle110.github.io%2fpost%2fmy_post_05_31_2020_a%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2fmuggle110.github.io%2fpost%2fmy_post_05_31_2020_a%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2fmuggle110.github.io%2fpost%2fmy_post_05_31_2020_a%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fmuggle110.github.io%2fpost%2fmy_post_05_31_2020_a%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2fmuggle110.github.io%2fpost%2fmy_post_05_31_2020_a%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	</li>
+</ul>
 
-  <p>
-  问题描述：
-配置好博客的主题后使用 hugo sever -D 检查本地样式显示正常，但一推送到github上就出现了样式不显示的问题; 多半是 config.toml 文件中的 baseUrl 没有配置好；
-解决方案：
-打开 hugo root 下的 /config.toml ，检查 baseUrl是否为
-baseurl = &quot;https://www.example.com/&quot; 如果是&quot;https://www.example.com/&quot;，请将&quot;&ldquo;内的链接地址修改为自己仓库的地址，如:
-baseurl = &quot;https://muggle110.github.io/&quot; 
-  </p>
+
+<style>
+	ul.share-buttons{
+	  list-style: none;
+	  padding: 0;
+	}
+
+	ul.share-buttons li{
+	  display: inline;
+	}
+
+	ul.share-buttons .sr-only{
+	  position: absolute;
+	  clip: rect(1px 1px 1px 1px);
+	  clip: rect(1px, 1px, 1px, 1px);
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+</style>
+
 
   
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://muggle110.github.io/post/my_first_post/">用 Hugo 搭建自己的 blog —— My first post</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>115 May 30300, 300:21</time>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://muggle110.github.io/post/my_first_post/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
+  <div class="pure-u-10-24">
     
-      <a class="post-taxonomy-topic" href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
+    <nav class="prev">
+      <a href="https://muggle110.github.io/post/my_first_post/">用 Hugo 搭建自己的 blog —— My first post</a>
+    </nav>
     
   </div>
-  
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://muggle110.github.io/tags/hugo">hugo</a>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
     
   </div>
-  
-  
-
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  这是第一篇文章。算是记录一下自己用hugo搭建博客所遇到的问题吧，我是根据🐑哥的教程来搭建的。 https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;seid=3132796518941291439
-我搭建博客所使用的环境是 macOS（ Catalina 10.15.4 ），并提前安装了 brew工具 和 git ，且配置好了 git 的 username 和 email ；
-首先， 我们来梳理一下用hugo搭建博客的流程：
-1.安装 Hugo（我使用的是brew工具进行的安装）；
-brew install hugo 2.用 Hugo 创建新的（博客）站点页面；
-hugo new site myblog //my blog 为自定义名称 3.下载并设置主题；
-进入myblog根目录下，输入
-git clone https://github.com/yoshiharuyamashita/blackburn themes/blackburn // 此处的themes/blackburn的功能是建立文件夹 4.在本地启动服务器测试博客的效果；
-hugo server -t blackburn --buildDrafts // -t 代表指定主题 blackburn是我下的主题的名字，可替换成你下载的主题名称 5.创建一篇新的文章，并使用 Visual Studio Code进行编辑；
-hugo new post/my first post.md // post/my first post.md 为自定义的新文件夹与其根目录下的文件；另，我本想用&quot;posts&quot;而非&quot;post&quot;，但该主题似乎制定路径为&quot;content/post&quot;。顺带一提，创建的文件都可以去finder中确认； 6.在github 创建一个新的 repository,并将本地博客部署到 github 的 repository 里;
-  </p>
 
   
-  <footer>
-    <a href="https://muggle110.github.io/post/my_first_post/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
-    <article>
-  <header>
-    <h2><a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>125 May 30300, 300:00</time>
-  </div>
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
+(function() {
     
-      <a class="post-taxonomy-topic" href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
     
-  </div>
-  
-  
+    if (window.location.hostname == "localhost")
+        return;
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://muggle110.github.io/tags/hugo">hugo</a>
-    
-  </div>
-  
-  
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-</div>
 
-  </header>
-
-  <p>
-  问题描述：
-使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &ldquo;new&rdquo; 的 非.md 的空白文件；
-解决方法：
-新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
-hugo new post/my_post_05_30_2020.md 
-  </p>
-
-  
-</article>
-
-  
 </div>
 
 </div>
@@ -468,3 +424,4 @@ hugo new post/my_post_05_30_2020.md
 
 </body>
 </html>
+

@@ -82,7 +82,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="https://muggle110.github.io/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://muggle110.github.io/">Muggle</a>
 
 
   <div class="pure-menu">
@@ -257,13 +257,13 @@
   
     <article>
   <header>
-    <h2><a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a></h2>
+    <h2><a href="https://muggle110.github.io/post/my_post_05_31_2020_a/">hugo 主题的样式部署到github上无法正常显示</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>120 May 30300, 00:00</time>
+    <time>105 May 31310, 310:26</time>
   </div>
 
   
@@ -298,10 +298,11 @@
 
   <p>
   问题描述：
-使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &ldquo;new&rdquo; 的 非.md 的空白文件；
-解决方法：
-新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
-hugo new post/my_post_05_30_2020.md 
+配置好博客的主题后使用 hugo sever -D 检查本地样式显示正常，但一推送到github上就出现了样式不显示的问题; 多半是 config.toml 文件中的 baseUrl 没有配置好；
+解决方案：
+打开 hugo root 下的 /config.toml ，检查 baseUrl是否为
+baseurl = &quot;https://www.example.com/&quot; 如果是&quot;https://www.example.com/&quot;，请将&quot;&ldquo;内的链接地址修改为自己仓库的地址，如:
+baseurl = &quot;https://muggle110.github.io/&quot; 
   </p>
 
   
@@ -316,7 +317,7 @@ hugo new post/my_post_05_30_2020.md
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>120 May 30300, 00:00</time>
+    <time>115 May 30300, 300:21</time>
   </div>
 
   
@@ -366,6 +367,59 @@ hugo new post/my first post.md // post/my first post.md 为自定义的新文件
   <footer>
     <a href="https://muggle110.github.io/post/my_first_post/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>125 May 30300, 300:00</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://muggle110.github.io/tags/hugo">hugo</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  问题描述：
+使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &ldquo;new&rdquo; 的 非.md 的空白文件；
+解决方法：
+新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
+hugo new post/my_post_05_30_2020.md 
+  </p>
+
   
 </article>
 

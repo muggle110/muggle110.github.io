@@ -3,43 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://muggle110.github.io/post/my_post_05_31_2020_a/</loc>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://muggle110.github.io/post/my_first_post/</loc>
+    <lastmod>2020-05-30T23:21:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://muggle110.github.io/post/my_post_05_30_2020_b/</loc>
     <lastmod>2020-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://muggle110.github.io/post/my_first_post/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://muggle110.github.io/tags/hugo/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://muggle110.github.io/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://muggle110.github.io/post/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://muggle110.github.io/tags/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://muggle110.github.io/topics/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2020-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-31T10:26:54+08:00</lastmod>
   </url>
   
 </urlset>
