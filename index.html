@@ -258,13 +258,67 @@
   
     <article>
   <header>
+    <h2><a href="https://muggle110.github.io/post/my_post_05_31_2020_b/">hugo 文章的时间出错，乱码</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>31 May 2020, 13:29</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://muggle110.github.io/tags/hugo">hugo</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  问题描述：
+hugo文章的创建时间出错， 显示为 00 May 22223333 诸如此类纯数字的乱码，是因为你的hugo站点的 dateFormat 与主题制作者写定的 dateFormat 不一致造成的。
+解决方法：
+打开
+hugo root/themes/theme name/exampleSite/config.toml 将 dataFormat 所在的那一行复制并粘贴到
+hugo root/config.toml 中 dataFormat所在的那一行
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://muggle110.github.io/post/my_post_05_31_2020_a/">hugo 主题的样式部署到github上无法正常显示</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>105 May 31310, 310:26</time>
+    <time>31 May 2020, 10:26</time>
   </div>
 
   
@@ -312,13 +366,66 @@ baseurl = &quot;https://muggle110.github.io/&quot;
   
     <article>
   <header>
+    <h2><a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>30 May 2020, 22:26</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://muggle110.github.io/tags/hugo">hugo</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  问题描述：
+使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &ldquo;new&rdquo; 的 非.md 的空白文件；
+解决方法：
+新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
+hugo new post/my_post_05_30_2020.md 
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://muggle110.github.io/post/my_first_post/">用 Hugo 搭建自己的 blog —— My first post</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>115 May 30300, 300:21</time>
+    <time>11 May 2020, 19:26</time>
   </div>
 
   
@@ -368,59 +475,6 @@ hugo new post/my first post.md // post/my first post.md 为自定义的新文件
   <footer>
     <a href="https://muggle110.github.io/post/my_first_post/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://muggle110.github.io/post/my_post_05_30_2020_b/">hugo new post/x x x.md 无法正确生成.md文件</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>125 May 30300, 300:00</time>
-  </div>
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
-    
-      <a class="post-taxonomy-topic" href="https://muggle110.github.io/topics/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95">踩坑记录</a>
-    
-  </div>
-  
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://muggle110.github.io/tags/hugo">hugo</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  问题描述：
-使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &ldquo;new&rdquo; 的 非.md 的空白文件；
-解决方法：
-新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
-hugo new post/my_post_05_30_2020.md 
-  </p>
-
   
 </article>
 

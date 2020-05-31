@@ -6,10 +6,24 @@
     <description>Recent content in hugo on Muggle</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 31 May 2020 10:26:54 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 13:29:49 +0800</lastBuildDate>
     
 	<atom:link href="https://muggle110.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo 文章的时间出错，乱码</title>
+      <link>https://muggle110.github.io/post/my_post_05_31_2020_b/</link>
+      <pubDate>Sun, 31 May 2020 13:29:49 +0800</pubDate>
+      
+      <guid>https://muggle110.github.io/post/my_post_05_31_2020_b/</guid>
+      <description>问题描述：
+hugo文章的创建时间出错， 显示为 00 May 22223333 诸如此类纯数字的乱码，是因为你的hugo站点的 dateFormat 与主题制作者写定的 dateFormat 不一致造成的。
+解决方法：
+打开
+hugo root/themes/theme name/exampleSite/config.toml 将 dataFormat 所在的那一行复制并粘贴到
+hugo root/config.toml 中 dataFormat所在的那一行</description>
+    </item>
     
     <item>
       <title>hugo 主题的样式部署到github上无法正常显示</title>
@@ -26,9 +40,22 @@ baseurl = &amp;quot;https://muggle110.github.io/&amp;quot; </description>
     </item>
     
     <item>
+      <title>hugo new post/x x x.md 无法正确生成.md文件</title>
+      <link>https://muggle110.github.io/post/my_post_05_30_2020_b/</link>
+      <pubDate>Sat, 30 May 2020 22:26:11 +0800</pubDate>
+      
+      <guid>https://muggle110.github.io/post/my_post_05_30_2020_b/</guid>
+      <description>问题描述：
+使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &amp;ldquo;new&amp;rdquo; 的 非.md 的空白文件；
+解决方法：
+新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
+hugo new post/my_post_05_30_2020.md </description>
+    </item>
+    
+    <item>
       <title>用 Hugo 搭建自己的 blog —— My first post</title>
       <link>https://muggle110.github.io/post/my_first_post/</link>
-      <pubDate>Sat, 30 May 2020 23:21:54 +0800</pubDate>
+      <pubDate>Mon, 11 May 2020 19:26:55 +0800</pubDate>
       
       <guid>https://muggle110.github.io/post/my_first_post/</guid>
       <description>这是第一篇文章。算是记录一下自己用hugo搭建博客所遇到的问题吧，我是根据🐑哥的教程来搭建的。 https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;amp;seid=3132796518941291439
@@ -41,19 +68,6 @@ hugo new site myblog //my blog 为自定义名称 3.下载并设置主题；
 git clone https://github.com/yoshiharuyamashita/blackburn themes/blackburn // 此处的themes/blackburn的功能是建立文件夹 4.在本地启动服务器测试博客的效果；
 hugo server -t blackburn --buildDrafts // -t 代表指定主题 blackburn是我下的主题的名字，可替换成你下载的主题名称 5.创建一篇新的文章，并使用 Visual Studio Code进行编辑；
 hugo new post/my first post.md // post/my first post.md 为自定义的新文件夹与其根目录下的文件；另，我本想用&amp;quot;posts&amp;quot;而非&amp;quot;post&amp;quot;，但该主题似乎制定路径为&amp;quot;content/post&amp;quot;。顺带一提，创建的文件都可以去finder中确认； 6.在github 创建一个新的 repository,并将本地博客部署到 github 的 repository 里;</description>
-    </item>
-    
-    <item>
-      <title>hugo new post/x x x.md 无法正确生成.md文件</title>
-      <link>https://muggle110.github.io/post/my_post_05_30_2020_b/</link>
-      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://muggle110.github.io/post/my_post_05_30_2020_b/</guid>
-      <description>问题描述：
-使用 hugo new post/my post 05 03 2020.md 新建 markdown 文件， 结果在 content/post/ 生成了一个文件名为 &amp;ldquo;new&amp;rdquo; 的 非.md 的空白文件；
-解决方法：
-新建.md文档时文件名不要用空格，可使用下划线代替，即可正确生成。正确的格式应该是：
-hugo new post/my_post_05_30_2020.md </description>
     </item>
     
   </channel>
